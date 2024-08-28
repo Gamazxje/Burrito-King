@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="327.0" prefWidth="520.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.RegisterController">
+    <Label text="Username:">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Label>
+    <TextField fx:id="usernameField" />
+    <Label text="Password:">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Label>
+    <PasswordField fx:id="passwordField" />
+    <Label text="First Name:">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Label>
+    <TextField fx:id="firstNameField" />
+    <Label text="Last Name:">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Label>
+    <TextField fx:id="lastNameField" />
+    <Button onAction="#handleRegister" text="Register">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Button>
+    <Button onAction="#handleCancel" prefHeight="26.0" prefWidth="61.0" text="Cancel">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Button>
+</VBox>

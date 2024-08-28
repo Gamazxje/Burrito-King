@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="main.java.controller.OrderManagementController" spacing="10" alignment="CENTER">
+    <Label text="Your Orders" />
+    <ListView fx:id="ordersListView" prefHeight="400" prefWidth="600"/>
+    <Button text="Collect Order" onAction="#handleCollectOrder"/>
+    <Button text="Cancel Order" onAction="#handleCancelOrder"/>
+    <Button text="Export Orders" onAction="#handleExportOrders"/>
+    <Button text="Back" onAction="#handleBack"/>
+</VBox>

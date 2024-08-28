@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="434.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.DashboardController">
+    <Label fx:id="userLabel" text="User">
+      <VBox.margin>
+         <Insets left="430.0" />
+      </VBox.margin></Label>
+    <Text text="Welcome to BurritoKing!" wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Text>
+    <Text text="BurritoKing is your go-to app for delicious burritos, crispy fries, and refreshing sodas." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Text>
+    <Text text="Here's how it works:" wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Text>
+    <Text text="1. Edit Profile: Update your personal details anytime." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <Text text="2. View Orders: Check out all your past orders." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <Text text="3. Order Management: Manage your current and past orders." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <Text text="4. Shopping Basket: Add items to your basket and place orders." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <Text text="5. Upgrade to VIP: Enjoy additional benefits by upgrading to VIP." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <Text text=" " wrappingWidth="880.0" />
+    <Text text="A VIP user has the following additional functionalities:" wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="10.0" />
+      </VBox.margin></Text>
+    <Text text="• Ordering a meal (a burrito, one serve of fries, and a soda), with a discount of $3." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <Text text="• Collecting credits for all orders. The user can earn one credit for each dollar spent." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <Text text="• Use credits when paying for orders. The program should ask the user if they wants to redeem credits when checking out. If yes, ask the user to specify the number of credits to redeem. Every 100 credits can be used as one dollar." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" right="15.0" />
+      </VBox.margin></Text>
+    <Text text="• If credits are redeemed in payment, the final order price of this order should be recorded as the actual amount paid by user." wrappingWidth="880.0">
+      <VBox.margin>
+         <Insets left="15.0" />
+      </VBox.margin></Text>
+    <ListView fx:id="ordersListView" prefHeight="191.0" prefWidth="913.0">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+    </ListView>
+    <Button onAction="#handleEditProfile" prefHeight="26.0" prefWidth="121.0" text="Edit Profile">
+        <VBox.margin>
+            <Insets bottom="10.0" left="380.0" top="10.0" />
+        </VBox.margin>
+    </Button>
+    <Button onAction="#handleViewOrders" prefHeight="26.0" prefWidth="121.0" text="View Orders">
+        <VBox.margin>
+            <Insets left="380.0" />
+        </VBox.margin>
+    </Button>
+    <Button onAction="#handleOrderManagement" text="Order Management">
+        <VBox.margin>
+            <Insets left="380.0" top="10.0" />
+        </VBox.margin>
+    </Button>
+    <Button onAction="#handleLogout" prefHeight="26.0" prefWidth="121.0" text="Logout">
+        <VBox.margin>
+            <Insets left="380.0" top="10.0" />
+        </VBox.margin>
+    </Button>
+    <Button onAction="#handleShoppingBasket" prefHeight="26.0" prefWidth="121.0" text="Shopping Basket">
+        <VBox.margin>
+            <Insets left="380.0" top="10.0" />
+        </VBox.margin>
+    </Button>
+    <Button onAction="#handleUpgradeToVIP" prefHeight="26.0" prefWidth="121.0" text="Upgrade to VIP">
+        <VBox.margin>
+            <Insets bottom="10.0" left="380.0" top="10.0" />
+        </VBox.margin>
+    </Button>
+</VBox>

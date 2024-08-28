@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.ShoppingBasketController">
+    <children>
+        <Label text="Order Menu" />
+        <ListView fx:id="basketListView" prefHeight="400.0" prefWidth="682.0" />
+        <Button onAction="#handleAddBurrito" text="Add Burrito" />
+        <Button onAction="#handleAddFries" text="Add Fries" />
+        <Button onAction="#handleAddSoda" text="Add Soda" />
+        <Button onAction="#handleRemoveSelected" text="Remove Selected" />
+        <Button onAction="#handleUpdateQuantity" text="Update Quantity" />
+        <Button onAction="#handleCheckout" text="Checkout" />
+        <Button onAction="#handleAddOrder" text="Place Order" />
+        <Button onAction="#handleBack" text="Back" />
+    </children>
+</VBox>
